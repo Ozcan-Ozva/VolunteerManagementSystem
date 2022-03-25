@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  SOCKET_ENDPOINT: 'ws://195.201.133.143:5842',
+  base_url: 'http://195.201.133.143:5842/api/',
+  jwt_whitelist: ['195.201.133.143:5842'],
 };
 
 /*
