@@ -9,6 +9,8 @@ import { NgxTimerModule } from 'ngx-timer';
 import { ComponentsModule } from 'src/app/Custom/Components/components.module';
 import { HomeComponent } from 'src/app/Modules/home/home.component';
 import { HomeRouting } from 'src/app/Modules/home/home.routing';
+import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
+
 @NgModule({
     imports: [
         ComponentsModule,
@@ -21,7 +23,7 @@ import { HomeRouting } from 'src/app/Modules/home/home.routing';
         NgxTimerModule,
         CdkScrollableModule,
     ],
-    declarations: [HomeComponent],
+    declarations: [HomeComponent, NavBarComponent],
 })
 export class HomeModule {
     constructor(private translateService: TranslateService) {

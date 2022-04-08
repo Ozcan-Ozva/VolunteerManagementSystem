@@ -28,6 +28,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "angular-mentions": "^1.4.0",
+    "jspdf": "^2.5.1",
     "ngx-infinite-scroll": "^10.0.1",
     "ngx-timer": "^1.0.6",
     "rxjs": "~6.6.0",

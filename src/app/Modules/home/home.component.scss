@@ -8,7 +8,7 @@
     padding-inline-end: 4rem;
     align-items: center;
     transition: box-shadow 500ms;
-    background-color: #aaaaaa;
+    background-color: #ffffff;
   }
   
   * {
@@ -30,7 +30,7 @@
   }
   
   .avatar {
-      background-color: #111111;
+      background-color: rgb(158, 158, 158);
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -60,7 +60,7 @@
       left: 1200px;
       .logo {
           border-radius: 10px;
-          background-color: #fff;
+          background-color: rgb(158, 158, 158);
           height: 50px;
       }
       .tamayz-name {
@@ -69,12 +69,61 @@
   }
   
   .nav-bar {
+    margin-top: 3px;
     z-index: 11;
     inset-inline-start: 0;
     top: 5.625rem;
+    left: 1447px;
     background-color: white;
     min-height: 70%;
     height: auto;
     padding: 0 0.625rem;
     position: fixed;
+}
+
+/* Float four columns side by side */
+.column-33 {
+  float: left;
+  width: 33.3333%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-form {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-33 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.content {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  padding: 0 4rem 0 4.4rem;
+  flex-grow: 1;
+
+  .wrapper {
+      position: relative;
+      display: block;
+      width: 100%;
+  }
+}

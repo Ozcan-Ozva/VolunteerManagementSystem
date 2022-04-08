@@ -1,0 +1,44 @@
+<!--The header of the page-->
+<div class="row" style="margin-bottom: -30px;">
+  <!--Create form button-->
+  <div class="column-50" style="width: max-content;">
+    <button class="btn create-forms-button">انشاء</button>
+  </div>
+  <!--Title of the page-->
+  <div class="column-50 volunteers-forms-title">استمارات المتطوعين</div>
+</div>
+
+<!--HR forms div contain volunteers forms and available to delete, send and edit-->
+<div class="forms-container">
+  <!--Row contain Three column for each column there is card-->
+  <div class="row-form" style=" width: auto;">
+    <!--Column and Card repeated number of forms request-->
+    <div *ngFor="let form of formsRequestNumber" class="column-33 forms-column">
+      <!--Card-->
+      <div class="card forms-card">
+        <!--Row contatin two column forms details and action and second column for avatar-->
+        <div class="row" style="width: auto;">
+          <!--Details column-->
+          <div class="column-50" style="width: auto;">
+            <div class="row" style="width: auto;">
+              <div class="column-50" style="width: auto;">1-2-2020 12:35</div>
+              <div class="column-50 volunteer-name">اسم المتقدم</div>
+            </div>
+            <!--Actions-->
+            <div class="row" style="width: auto; margin-left: 20px;">
+              <button class="btn delete-button">حذف</button>&nbsp;
+              <button class="btn send-button">ارسال</button>&nbsp;
+              <button class="btn edit-button">تعديل</button>&nbsp;
+            </div>
+          </div>
+          <!--Avatar-->
+          <div class="column-50" style="width: auto; margin-left: -20px">
+            <div class="avatar" style="width: 60px; height: 60px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Send All Button-->
+  <button class="btn send-all-button">ارسال للكل</button>
+</div>

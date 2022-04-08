@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div *ngFor="let item of navigation" class="navigation-item">
+        <button
+            class="nav"
+            [routerLink]="item.route"
+            [routerLinkActive]="'active'"
+            style="width: 100%; height: 50px; padding: 0"
+            tl-button
+            type="icon"
+            mode="ghost"
+        >
+            <i class="material-icons active">{{item.icon_active}}</i>
+            <i class="material-icons inactive">{{item.icon_inactive}}</i>
+        </button>
+        <span>{{ item.title }}</span>
+    </div>
+</div>

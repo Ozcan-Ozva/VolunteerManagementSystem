@@ -42,10 +42,13 @@ const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        // resolve: {
-        //     profile: ProfileResolver,
-        // },
-        children: [],
+        children: [
+            {
+                path: 'forms',
+                loadChildren: () =>
+                    import('./Modules/Forms/forms.module').then((module) => module.FormsModule),
+            },
+        ],
     },
 ];
 

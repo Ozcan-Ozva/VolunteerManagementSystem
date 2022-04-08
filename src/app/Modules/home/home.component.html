@@ -1,16 +1,27 @@
 <div class="sticky-header">
-    <div class="row">
-      <div class="column-50 avatar-column">
-        <div class="avatar"></div>
-      </div>
-      <div class="column-50 employee-title">
-        <div class="employee-name">Employee name</div>
-        <div class="position">Position</div>
-      </div>
+  <div class="row">
+    <div class="column-50 avatar-column">
+      <div class="avatar"></div>
     </div>
-  
-    <div class="row organization-info">
-      <div class="column-50 logo"></div>
-      <div class="column-50 tamayz-name">Tamayz</div>
+    <div class="column-50 employee-title">
+      <div class="employee-name">Employee name</div>
+      <div class="position">Position</div>
     </div>
   </div>
+
+  <div class="row organization-info">
+    <div class="column-50 logo"></div>
+    <div class="column-50 tamayz-name">Tamayz</div>
+  </div>
+</div>
+
+<div style="background-color: rgb(195, 195, 195); width: 100%; height:100%; padding: 20px;">
+  <div class="nav-bar elevation-z2">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="content">
+    <div class="wrapper">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
