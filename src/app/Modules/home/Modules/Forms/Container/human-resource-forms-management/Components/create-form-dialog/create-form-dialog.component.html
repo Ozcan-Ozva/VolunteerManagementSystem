@@ -1,0 +1,26 @@
+<div class="card">
+  <form [formGroup]="form">
+    <div class="card-content">
+      <div class="row">
+        <div class="column-50">
+          <div *ngFor="let input of leftInputsColumn" class="form-group" style="margin-left: 60px">
+            <label style="float:right;" for="exampleInputEmail1">{{input.name}}</label>
+            <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="ادخل قيمة">
+          </div>
+        </div>
+        <div class="column-50">
+            <div *ngFor="let input of rightInputsColumn" class="form-group" style="margin-left: 60px">
+                <label style="float:right;" for="exampleInputEmail1">{{input.name}}</label>
+                <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="ادخل قيمة">
+              </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div style="float: left;">
+    <button class="btn saveButton" (click)="onSave()">حفظ</button>
+    <button class="btn cancelButton" (click)="onCancel()">الغاء</button>
+  </div>
+</div>

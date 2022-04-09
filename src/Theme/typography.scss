@@ -1,0 +1,167 @@
+@function treelancers-typography-level(
+    $font-size,
+    $line-height: $font-size,
+    $font-weight: 400,
+    $font-family: null,
+    $letter-spacing: null,
+    $text-transform: null
+) {
+    @return (
+        font-size: $font-size,
+        line-height: $line-height,
+        font-weight: $font-weight,
+        font-family: $font-family,
+        letter-spacing: $letter-spacing
+    );
+}
+
+@mixin typography-style($config) {
+    font-size: map-get($map: $config, $key: 'font-size');
+    line-height: map-get($map: $config, $key: 'line-height');
+    font-weight: map-get($map: $config, $key: 'font-weight');
+    font-family: map-get($map: $config, $key: 'font-family');
+    letter-spacing: map-get($map: $config, $key: 'letter-spacing');
+    text-transform: map-get($map: $config, $key: 'text-transform');
+}
+
+$typography-config: (
+    font-family: 'Roboto',
+    h1: treelancers-typography-level(96px),
+    h2: treelancers-typography-level(60px),
+    h3: treelancers-typography-level(48px),
+    h4: treelancers-typography-level(34px),
+    h5: treelancers-typography-level(24px),
+    h6: treelancers-typography-level(20px),
+    body1: treelancers-typography-level(16px),
+    body2: treelancers-typography-level(14px),
+    subtitle1: treelancers-typography-level(16px),
+    subtitle2: treelancers-typography-level(14px),
+    button: treelancers-typography-level(14px),
+    overline: treelancers-typography-level(10px),
+    caption: treelancers-typography-level(12px),
+);
+
+@mixin defulat-typography($typography-config) {
+    $h1: map-get(
+        $map: $typography-config,
+        $key: 'h1',
+    );
+    $h2: map-get(
+        $map: $typography-config,
+        $key: 'h2',
+    );
+    $h3: map-get(
+        $map: $typography-config,
+        $key: 'h3',
+    );
+    $h4: map-get(
+        $map: $typography-config,
+        $key: 'h4',
+    );
+    $h5: map-get(
+        $map: $typography-config,
+        $key: 'h5',
+    );
+    $h6: map-get(
+        $map: $typography-config,
+        $key: 'h6',
+    );
+    $body1: map-get(
+        $map: $typography-config,
+        $key: 'body1',
+    );
+    $body2: map-get(
+        $map: $typography-config,
+        $key: 'body2',
+    );
+    $subtitle1: map-get(
+        $map: $typography-config,
+        $key: 'subtitle1',
+    );
+    $subtitle2: map-get(
+        $map: $typography-config,
+        $key: 'subtitle2',
+    );
+    $button: map-get(
+        $map: $typography-config,
+        $key: 'button',
+    );
+    $overline: map-get(
+        $map: $typography-config,
+        $key: 'overline',
+    );
+    $caption: map-get(
+        $map: $typography-config,
+        $key: 'caption',
+    );
+    * {
+        font-family: unquote(map-get($map: $typography-config, $key: 'font-family'));
+    }
+    h1,
+    .tl-h1 {
+        @include typography-style($h1);
+    }
+    h2,
+    .tl-h2 {
+        @include typography-style($h2);
+    }
+    h3,
+    .tl-h3 {
+        @include typography-style($h3);
+    }
+    h4,
+    .tl-h4 {
+        @include typography-style($h4);
+    }
+    h5,
+    .tl-h5 {
+        @include typography-style($h5);
+    }
+    h6,
+    .tl-h6 {
+        @include typography-style($h6);
+    }
+    input,
+    .tl-input {
+        @include typography-style($body1);
+    }
+
+    .tl-text-lighter {
+        color: $light-primary-text;
+    }
+    .tl-text-light {
+        color: $light-secondary-text;
+    }
+
+    .tl-text-dark {
+        color: $dark-secondary-text;
+    }
+    .tl-text-darker {
+        color: $dark-primary-text;
+    }
+
+    .tl-text-xsm {
+        font-size: x-small;
+    }
+    .tl-text-sm {
+        font-size: small;
+    }
+    .tl-text-me {
+        font-size: medium;
+    }
+    .tl-text-weak {
+        font-weight: 200;
+    }
+    .tl-text-strong {
+        font-weight: 500;
+    }
+    .tl-text-stronger {
+        font-weight: 600;
+    }
+    .tl-text-lg {
+        font-size: larger;
+    }
+    .tl-text-xlg {
+        font-size: x-large;
+    }
+}

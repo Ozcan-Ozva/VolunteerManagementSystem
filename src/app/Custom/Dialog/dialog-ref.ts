@@ -1,11 +1,11 @@
 import { OverlayRef } from '@angular/cdk/overlay';
 import { Observable, Subject } from 'rxjs';
-import { TLDialogContainer } from './dialog';
+import { CustomDialogContainer } from './dialog';
 
-export class TLDialogRef<Result = any> {
+export class CustomDialogRef<Result = any> {
     private _result = new Subject<Result>();
 
-    constructor(private overlayRef: OverlayRef, private container: TLDialogContainer, private id: number) {}
+    constructor(private overlayRef: OverlayRef, private container: CustomDialogContainer, private id: number) {}
 
     public close(result?: Result) {
         this._result.next(result);
@@ -27,5 +27,5 @@ export class TLDialogRef<Result = any> {
     }
 }
 
-export const TL_DIALOG_DATA = 'tl.dialog.data';
-export const TL_DIALOG_REF = 'tl.dialog.ref';
+export const Custom_DIALOG_DATA = 'custom.dialog.data';
+export const Custom_DIALOG_REF = 'custom.dialog.ref';

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { TLDialog } from './dialog.service';
+import { CustomDialog } from './dialog.service';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { PortalModule } from '@angular/cdk/portal';
-import { TLDialogContainer } from './dialog';
+import { CustomDialogContainer } from './dialog';
 
 @NgModule({
     imports: [OverlayModule, PortalModule],
     exports: [],
-    declarations: [TLDialogContainer],
-    providers: [TLDialog],
-    entryComponents: [TLDialogContainer],
+    declarations: [CustomDialogContainer],
+    providers: [CustomDialog],
+    entryComponents: [CustomDialogContainer],
 })
-export class TreelancersDialogModule {}
+export class CustomDialogModule {}

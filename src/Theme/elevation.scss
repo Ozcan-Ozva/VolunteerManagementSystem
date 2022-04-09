@@ -1,0 +1,94 @@
+@mixin make-elevation-z0 {
+    box-shadow: none;
+}
+
+@mixin make-elevation-z1 {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z2 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z3 {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z4 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z6 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z8 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+        0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z9 {
+    box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12),
+        0 5px 6px -3px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z12 {
+    box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12),
+        0 7px 8px -4px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z16 {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-elevation-z24 {
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12),
+        0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+@mixin make-all-elevation {
+    .elevation-z0 {
+        @include make-elevation-z0();
+    }
+
+    .elevation-z1 {
+        @include make-elevation-z1();
+    }
+
+    .elevation-z2 {
+        @include make-elevation-z2();
+    }
+
+    .elevation-z3 {
+        @include make-elevation-z3();
+    }
+
+    .elevation-z4 {
+        @include make-elevation-z4();
+    }
+
+    .elevation-z6 {
+        @include make-elevation-z6();
+    }
+
+    .elevation-z8 {
+        @include make-elevation-z8();
+    }
+
+    .elevation-z9 {
+        @include make-elevation-z9();
+    }
+
+    .elevation-z12 {
+        @include make-elevation-z12();
+    }
+
+    .elevation-z16 {
+        @include make-elevation-z16();
+    }
+
+    .elevation-z24 {
+        @include make-elevation-z24();
+    }
+}

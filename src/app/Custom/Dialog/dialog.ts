@@ -6,12 +6,12 @@ import { ComponentPortal, CdkPortalOutlet } from '@angular/cdk/portal';
     styleUrls: ['./dialog.scss'],
     encapsulation: ViewEncapsulation.None,
     host: {
-        class: 'tl-dialog-container',
+        class: 'custom-dialog-container',
         '[style.min-width]': 'width',
         '[style.min-height]': 'height',
     },
 })
-export class TLDialogContainer {
+export class CustomDialogContainer {
     @ViewChild(CdkPortalOutlet, { static: true }) portalOutlet: CdkPortalOutlet;
 
     @Input() width: string | number = 0;

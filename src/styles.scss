@@ -36,4 +36,27 @@ $VolunteerManagementSystem-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(195, 195, 195); }
+
+.custom-dialog-backdrop {
+  background-color: #000000a0;
+}
+
+.custom-dialog-panel {
+  pointer-events: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.custom-dialog-container {
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  pointer-events: none;
+
+  :first-child {
+      pointer-events: all;
+  }
+}

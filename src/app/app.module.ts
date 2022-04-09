@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './Custom/Components/components.module';
+import { CustomDialogModule } from './Custom/Dialog/dialog.moduls';
 import { AuthService, TokenPayload } from './Services/auth.service';
 import { GatewayModule } from './Services/Gateways/gateway.module';
 import { StoreAppModule } from './Store/store-app.module';
@@ -34,6 +35,7 @@ export function tokenGetter(): string | null {
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    CustomDialogModule,
     AppRoutingModule,
     ComponentsModule,
     BrowserAnimationsModule,

@@ -1,0 +1,32 @@
+<div style="margin: 50px;">
+  <h2 style="text-align: right; color: rgb(6, 6, 57); font-size:25px; font-weight:bold;">استمارات المتطوعين</h2>
+
+  <input style="text-align: right;" type="text" id="myInput" onkeyup="myFunction()" placeholder="...ابحث هنا" title="Type in a name">
+
+  <table id="myTable">
+    <tr class="header">
+      <th>الاجراءات</th>
+      <th >التاريخ</th>
+      <th >الاختصاص</th>
+      <th >العمر</th>
+      <th >الاسم</th>
+      <th >الصورة</th>
+      <th >الرقم</th>
+    </tr>
+    <tr *ngFor="let form of formsCount; let index = index">
+      <td>
+        <button class="btn saveButton">موافقة</button>
+        <button class="btn cancelButton">رفض</button>
+    </td>
+      <td>12/2/2022</td>
+      <td>مهندس برمجيات</td>
+      <td>23</td>
+      <td>طارق آمنة</td>
+      <td>
+        <img src="https://media.istockphoto.com/vectors/male-face-silhouette-or-icon-man-avatar-profile-unknown-or-anonymous-vector-id1087531642?k=20&m=1087531642&s=170667a&w=0&h=ge3fq1Dw0-J2FoW96c8klSiHyOnitVhReUUuIIYqtvw=" alt="Avatar" class="avatar">
+      </td>
+      <td>{{index + 1}}</td>
+    </tr>
+  </table>
+
+</div>

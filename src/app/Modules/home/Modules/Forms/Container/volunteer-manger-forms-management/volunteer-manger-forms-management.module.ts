@@ -8,11 +8,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TranslateModule } from '@ngx-translate/core';
-import { HumanResourceFormsManagementComponent } from './human-resource-forms-management.component';
-import { CreateFormDialogComponent } from './Components/create-form-dialog/create-form-dialog.component';
+import { VolunteerMangerFormsManagementComponent } from './volunteer-manger-forms-management.component';
 
 @NgModule({
-    declarations: [HumanResourceFormsManagementComponent, CreateFormDialogComponent],
+    declarations: [VolunteerMangerFormsManagementComponent],
     imports: [
         MatFormFieldModule,
         MatDatepickerModule,
@@ -26,4 +25,4 @@ import { CreateFormDialogComponent } from './Components/create-form-dialog/creat
         }),
     ],
 })
-export class HumanResourceFormsManagementViewModule {}
+export class VolunteerMangerFormsManagementViewModule {}

@@ -1,0 +1,27 @@
+@import './core.scss';
+@import './palette.scss';
+@import './typography.scss';
+@import './elevation.scss';
+@import './utils.scss';
+@import './vars.scss';
+
+@include assign-theme($primary, $secondary, $warn);
+@include assign-typography($typography-config);
+@include make-all-elevation;
+
+.tl-unselectable {
+    @include make-unselectable;
+}
+
+.tl-divider-dark {
+    border: solid $dark-secondary-text 1px;
+}
+.tl-divider-darker {
+    border: solid $dark-primary-text 1px;
+}
+.tl-divider-light {
+    border: solid $light-secondary-text 1px;
+}
+.tl-divider-lighter {
+    border: solid $light-primary-text 1px;
+}
