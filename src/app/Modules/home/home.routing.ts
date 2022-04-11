@@ -48,6 +48,11 @@ const routes: Routes = [
                 loadChildren: () =>
                     import('./Modules/Forms/forms.module').then((module) => module.FormsModule),
             },
+            {
+                path: 'permissions-and-roles',
+                loadChildren: () =>
+                    import('./Modules/PermissionsAndRoles/permissions-and-role.module').then((module) => module.PermissionsAndRolesModule),
+            },
         ],
     },
 ];

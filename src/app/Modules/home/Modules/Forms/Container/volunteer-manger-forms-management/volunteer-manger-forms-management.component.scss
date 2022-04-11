@@ -1,54 +1,56 @@
 #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }
-  
-  #myTable {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 18px;
-    background-color: white;
-  }
-  
-  #myTable th, #myTable td {
-    text-align: center;
-    padding: 12px;
-  }
-  
-  #myTable tr {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #myTable tr.header, #myTable tr:hover {
-    background-color: #f1f1f1;
-  }
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
 
-  .saveButton {
-    background-color: rgb(6, 6, 57);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  background-color: white;
+}
+
+#myTable th,
+#myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.saveButton {
+  background-color: rgb(6, 6, 57);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cancelButton {
-    background-color: white;
-    color: rgb(6, 6, 57);
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 2px;
-    border-color: rgb(6, 6, 57);
+  background-color: white;
+  color: rgb(6, 6, 57);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 2px;
+  border-color: rgb(6, 6, 57);
 }
 
 .avatar {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

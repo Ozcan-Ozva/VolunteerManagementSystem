@@ -10,6 +10,7 @@ import { ComponentsModule } from 'src/app/Custom/Components/components.module';
 import { HomeComponent } from 'src/app/Modules/home/home.component';
 import { HomeRouting } from 'src/app/Modules/home/home.routing';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
+import { PermissionsAndRolesModule } from './Modules/PermissionsAndRoles/permissions-and-role.module';
 
 @NgModule({
     imports: [
@@ -19,6 +20,7 @@ import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
         PickerModule,
         ReactiveFormsModule,
         FormsModule,
+        PermissionsAndRolesModule,
         OverlayModule,
         NgxTimerModule,
         CdkScrollableModule,
