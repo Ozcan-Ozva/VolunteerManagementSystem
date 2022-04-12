@@ -56,3 +56,13 @@
     display: table;
     clear: both;
   }
+
+  .role-span {
+    background-color: coral;
+    border-radius: 25px;
+    padding: 5px;
+    margin-right: 5px;
+    white-space:nowrap;
+    display: inline-block;
+    margin-top: 10px;
+  }

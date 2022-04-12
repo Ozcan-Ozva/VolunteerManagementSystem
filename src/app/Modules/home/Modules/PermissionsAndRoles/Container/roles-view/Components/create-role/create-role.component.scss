@@ -6,6 +6,8 @@
     max-width: 750px;
     width: 100%;
     @include make-card;
+    @include make-scroll-bar;
+    overflow-y: auto;
     position: relative;
     padding: 50px 30px;
 

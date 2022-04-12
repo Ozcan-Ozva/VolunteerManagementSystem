@@ -1,0 +1,29 @@
+<div style="margin: 50px;">
+    <h2 style="text-align: right; color: rgb(6, 6, 57); font-size:25px; font-weight:bold;">الحسابات الادارية الحالية</h2>
+  
+    <input style="text-align: right;" type="text" id="myInput" onkeyup="myFunction()" placeholder="...ابحث هنا" title="Type in a name">
+    <button class="btn saveButton" (click)="createManagerAccount()" style="float: right; margin-bottom: 10px;">انشاء حساب</button>
+    <table id="myTable">
+      <tr class="header">
+        <th>الاجراءات</th>
+        <th >الأدوار</th>
+        <th >البريد الالكتروني</th>
+        <th >رقم الهاتف</th>
+        <th >الاسم</th>
+      </tr>
+      <tr *ngFor="let form of formsCount; let index = index">
+        <td>
+            <i class="bi bi-trash-fill"></i>&nbsp;
+            <i class="bi bi-eye"></i>&nbsp;
+            <i class="bi bi-share"></i>&nbsp;
+            <i class="bi bi-pencil-square"></i>&nbsp;
+            <i class="bi bi-info-circle"></i>&nbsp;
+      </td>
+        <td>مسؤول التلعيب</td>
+        <td>thisIsMyEmail@gmail.com</td>
+        <td>0978562455</td>
+        <td>طارق آمنة</td>
+      </tr>
+    </table>
+  
+  </div>

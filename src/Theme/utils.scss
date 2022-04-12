@@ -21,7 +21,7 @@
         border-bottom-right-radius: inherit;
         width: $w or 5px;
         height: $h or 5px;
-        background-color: map-get($map: $treelancsers-primary, $key: lighter);
+        background-color: wheat;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -29,7 +29,7 @@
         border-bottom-right-radius: inherit;
         width: 5px;
         height: 5px;
-        background-color: map-get($map: $treelancsers-primary, $key: default);
+        background-color: rgb(6, 6, 57);
     }
 }
 

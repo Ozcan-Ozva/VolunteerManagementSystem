@@ -1,0 +1,49 @@
+<div class="card" style="width: 450px;">
+    <p style="text-align:right; font-size: 30px; font-weight:bold; color:black">انشاء حساب اداري جديد</p>
+    <form [formGroup]="form">
+      <div>
+        <div class="form-group" style="margin-left: auto; margin-right: 0px;">
+          <label style="float:right;" for="exampleInputEmail1">اسم المستخدم</label>
+          <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="ادخل قيمة">
+        </div>
+        <div class="form-group" style="margin-left: auto; margin-right: 0px;">
+          <label style="float:right;" for="exampleInputEmail1">رقم الهاتف</label>
+          <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="ادخل قيمة">
+        </div>
+        <div class="form-group" style="margin-left: auto; margin-right: 0px;">
+          <label style="float:right;" for="exampleInputEmail1">البريد الالكتروني</label>
+          <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="ادخل قيمة">
+        </div>
+        <div class="form-group" style="margin-left: auto; margin-right: 0px;">
+          <label style="float:right;" for="exampleInputEmail1">كلمة المرور</label>
+          <input style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="ادخل قيمة">
+        </div>
+        <div class="form-group" style="margin-left: auto; margin-right: 0px;">
+          <label style="float:right;" for="exampleInputEmail1">كلمة المرور</label>
+          <input  (keydown.enter)="addRole()" style="text-align: right" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="ادخل قيمة" [ngModelOptions]="{standalone: true}" [(ngModel)]="roleName">
+            <span class="role-span" *ngFor="let role of roles">{{role}}</span>
+        </div>
+        <!--<div class="form-group">
+          <label style="float:right;" for="inputGroupSelect01">ادوار المستخدم</label>
+          <br>
+          <div class="input-group" style="margin-left: auto; margin-right: 0px; width: fit-content;">
+            <select class="custom-select" id="inputGroupSelect01" style="width: 300px; text-align: right;" multiple>
+              <option selected>...اختر من القائمة</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>-->
+      </div>
+    </form>
+    <div style="float: left; margin-bottom: -40px; margin-top: 50px;">
+      <button class="btn saveButton" (click)="onSave()">حفظ</button>
+      <button class="btn cancelButton" (click)="onCancel()">الغاء</button>
+    </div>
+  </div>
